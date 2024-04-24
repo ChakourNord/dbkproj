@@ -18,7 +18,7 @@ $("#login-button").click(function () {
 
     $.ajax({
       type: "POST",
-      url: ".../api/users/login.php",
+      url: "../api/users/login.php",
       data: input,
       dataType: "json",
       success: function (data) {
