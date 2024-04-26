@@ -18,12 +18,12 @@ $("#login-button").click(function () {
 
     $.ajax({
       type: "POST",
-      url: "api/users/login.php",
+      url: ".../api/users/login.php",
       data: input,
       dataType: "json",
       success: function (data) {
         if (data.result === "SUCCESS") {
-          location.href = "../../../user.php";
+          location.href = "user.php";
         } else {
           if (data.result != "ERROR")
             M.toast({ html: "Error", classes: "rounded toast-error" });

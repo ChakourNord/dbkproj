@@ -1,6 +1,6 @@
 <?php
 session_start();	
-if (isset($_SESSION["login"]))
+if (isset($_SESSION["user_id"]))
 {
 	echo 'geschuetzter Bereich, sie sind angemeldet <br>';
 	
