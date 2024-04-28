@@ -23,7 +23,7 @@ $("#login-button").click(function () {
       dataType: "json",
       success: function (data) {
         if (data.result === "SUCCESS") {
-          location.href = "../../../user.php";
+          location.href = "../../../autohandel/user.php";
         } else {
           if (data.result != "ERROR")
             M.toast({ html: "Error", classes: "rounded toast-error" });

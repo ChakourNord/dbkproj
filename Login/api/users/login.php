@@ -8,9 +8,8 @@ require_once "../../../conn.php";
 try {
   $params = [];
   $query = 'SELECT
-                users.id,
-                users.name,
-                users.surname
+                users.id
+                
               FROM users
               WHERE
               users.username = :username

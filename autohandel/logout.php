@@ -1,5 +1,5 @@
 <?PHP
 session_start();
 session_destroy();
-echo "Session beendet";
+header("Location:../Login/login.php ");
 ?>
