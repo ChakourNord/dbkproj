@@ -46,6 +46,36 @@ $(document).ready(function () {
     });
   }
 );
+
+
+
+  $(".del_M_row").click(function () {
+var id = this.dataset.id;
+var table = this.dataset.table;
+
+
+  var input = {
+    id: id,
+    table: table
+  };
+
+  $.ajax({
+    type: "POST",
+    url: "del_M.php",
+    data: input,
+    dataType: "json",
+    success: function (data) {
+      if (data.result === "SUCCESS") {
+          localStorage.setItem('showToast', 'true');
+        window.location.reload();
+         
+      } 
+    },
+  });
+}
+);
+
+
 $(document).ready(function() {
     if (localStorage.getItem('showToast') === 'true') {
         appendAlert('Data row Delete', 'danger')
