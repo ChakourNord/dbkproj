@@ -1,6 +1,6 @@
 <!-- main navbar-->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="TEST.php">
+    <a class="navbar-brand" href="user.php">
         <img src="gso.png" width="130" height="50"></img>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="TEST.php">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="user.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="stats.php">Statistics</a>

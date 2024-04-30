@@ -36,7 +36,7 @@ include "../conn.php";
   </script>
 
   <div class="box">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hinzu_m">Hinzu</button>
+    
      <!-- Modal -->
     
     </div>
@@ -86,15 +86,16 @@ include "../conn.php";
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Modell</th>
-            <th scope="col">Hersteller</th>
-            <th scope="col">Baujahr</th>
-            <th scope="col">Preis</th>
-            <th scope="col"></th>
+            
+            <th scope="col">name</th>
+            <th scope="col">nachname</th>
+            <th scope="col">telefonummer</th>
+           
+            
           </tr>
         </thead>
         <?php 
-        $sql = "select * from fahrzeuge where is_active = 1";
+        $sql = "select * from kunden";
         $sql =oci_parse($conn,$sql);
         oci_execute($sql);
         $i = 1;
@@ -116,15 +117,9 @@ include "../conn.php";
                       <th>
                       ".$row[3]."
                       </th>
-                      <th>
-                      ".$row[4]."
-                      </th>
-                      <th class="?>leftth<?php echo ">
-                      "?>
-                      <button type="button" class="btn btn-danger del_row"  data-table="fahrzeuge" data-id=<?php echo $row[0]?> >delete</button>
-                      <button type="button" class="btn btn-info auto_kun_ver" data-toggle="modal" data-target="#auto_ver" data-table="fahrzeuge" data-id=<?php echo $row[0]?> >verkaufen</button>
-                      <?php echo "
-                      </th>
+                    
+                     
+                     
                     </tr>
                    
                   

@@ -23,6 +23,7 @@ const appendAlert = (message, type) => {
 $(document).ready(function () {
     $(".del_row").click(function () {
   var id = this.dataset.id;
+ 
   var table = this.dataset.table;
 
  
@@ -47,17 +48,21 @@ $(document).ready(function () {
   }
 );
 
-
+$('.auto_kun_ver').on('click', function () {
+  $('.id_autover').attr("value", this.dataset.id);
+})
 
   $(".del_M_row").click(function () {
 var id = this.dataset.id;
+var user_id = this.dataset.users_id;
 var table = this.dataset.table;
 
 
-  var input = {
-    id: id,
-    table: table
-  };
+var input = {
+  user_id: user_id,
+  id: id,
+  table: table
+};
 
   $.ajax({
     type: "POST",
@@ -67,7 +72,7 @@ var table = this.dataset.table;
     success: function (data) {
       if (data.result === "SUCCESS") {
           localStorage.setItem('showToast', 'true');
-        window.location.reload();
+          window.location.reload();
          
       } 
     },
