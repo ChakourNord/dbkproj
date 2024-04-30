@@ -1,0 +1,18 @@
+table {
+    /* Not required only for visualizing */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead tr th {
+    /* Important */
+    background-color: #F0F0F0;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+td {
+    /* Not required only for visualizing */
+    padding: 1em;
+}

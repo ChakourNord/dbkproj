@@ -1,0 +1,261 @@
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.menu-item {
+    font-size: 15px;
+    margin: 6px;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+    height: 3.125rem;
+    padding: .75rem;
+}
+
+.form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0; /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    pointer-events: none;
+    cursor: text; /* Match the input under the label */
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::placeholder {
+    color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 12px;
+    color: #777;
+}
+
+.full-width {
+    min-width: 100%;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.select2-height {
+    min-height: 38px;
+    margin-top: 6px;
+}
+
+.padding-5p {
+    padding: 5px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.float-right {
+    text-align: right;
+}
+
+.no-shadow {
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+}
+
+.less-padding-left {
+    padding-left: 5px;
+}
+
+.less-padding-right {
+    padding-right: 5px;
+}
+
+.hr-less-margin {
+    margin-top: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.width-150p {
+    width: 150px;
+}
+
+.width-200p {
+    width: 200px;
+}
+
+.select2-selection__arrow {
+    min-height: 38px;
+    margin-right: 5px;
+}
+
+.select2-selection--single {
+    min-height: 38px;
+}
+
+.select2 select2-container select2-container--default select2-container--below {
+    left: 0 !important;
+}
+
+.select2-container--default {
+    left: 0;
+    width: 100% !important;
+}
+
+.custom-select {
+    left: 0 !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+.input-login {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.display-none {
+    display: none;
+}
+
+.modal-xxl {
+    max-width: 1280px;
+}
+
+.select2-label {
+    background-color: white !important;
+    line-height: 16px !important;
+    top: -14px !important;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.no-decoration:hover {
+    text-decoration: none;
+}
+
+.no-hover{
+    background-color: #f0f0f0;
+}
+
+.table-hover>tbody>tr.no-hover:hover {
+    background-color: #f0f0f0;
+}
+
+.select2-container .select2-selection--multiple {
+    min-height: 38px;
+    font-size: 12px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding: 3px 4px;
+}
+
+.margin-top-5px{
+    margin-top: 5px;
+}
+
+.selecter
+{
+    margin: 5%;
+    width: 90%;
+    -webkit-transition: 0.33s; /* For Safari 3.1 to 6.0 */
+    transition: 0.33s;
+}
+
+.selecter:hover
+{
+    margin: 0%;
+    width: 100%;
+}
+
+.noStretch {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.dropdown-menu > li > a:hover {
+    background-image: none;
+    background-color: transparent;
+}
+.navbar-nav{
+list-style: none;
+}	

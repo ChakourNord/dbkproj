@@ -1,0 +1,37 @@
+# .gitignore
+
+# Ignoriere Bildformate
+*.jpg
+*.png
+*.gif
+*.bmp
+
+# Ignoriere OS generierte Dateien
+ehthumbs.db
+Thumbs.db
+
+# Ignoriere Editor-Dateien
+*.sublime*
+*.idea*
+*.docx
+*.vscode*
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Ignoriere Log-Dateien und Datenbanken
+*.log
+*.sql
+*.sqlite
+*.pdf
+database.php
+xcrud_db.php
+# Ignoriere Build-Dateien
+composer.phar
+/vendor/
+/node_modules/
+
+# Ignoriere Umgebungsdateien
+.env
+*.docx
